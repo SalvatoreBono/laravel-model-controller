@@ -12,7 +12,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $data = Movie::all()->get();
+        $data = Movie::all();
         return view('index', ["Movies" => $data]);
     }
 }
